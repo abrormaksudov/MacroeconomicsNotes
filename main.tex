@@ -1,10 +1,12 @@
 \documentclass[a4paper, 11pt]{article}
-\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[top=1in, bottom=1in, left=0.9in, right=0.9in]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{enumitem}
 \usepackage{tasks}
 \usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{multicol}
 % \everymath{\displaystyle}
 
 
@@ -16,6 +18,103 @@
 
 \maketitle
 \tableofcontents
+
+\section{Gross Domestic Product (GDP)}
+Gross Domestic Product (GDP) is the total market value of all \textbf{final goods and services} produced \textbf{within a country’s borders} in \textbf{a specific time period}.\\[20pt]
+\textbf{GPD} \underline{does not include:}
+\begin{multicols}{2}
+    \begin{itemize}
+        \item Intermediate goods
+        \item Non-market activities
+        \item Used goods transactions
+        \item Financial transactions
+        \item Illegal activities
+        \item Environmental externalities
+    \end{itemize}
+\end{multicols}
+
+\section{Methods of Measuring GDP}
+\begin{enumerate}
+    \item \textbf{Production (Value-Added) Approach:} 
+    \begin{itemize}
+        \item Aggregates the value added at each stage of production.
+        \item Value added $=$ Revenue $-$ Cost of intermediate inputs.
+    \end{itemize}
+
+    \item \textbf{Expenditure Approach:}
+    \begin{itemize}
+        \item Adds up total spending on final goods and services.
+        \item GDP $=$ Consumption $+$ Investment $+$ Government Spending $+$ (Exports $-$ Imports).
+    \end{itemize}
+
+    \item \textbf{Income Approach:}
+    \begin{itemize}
+        \item Sums all incomes earned by households and businesses during production.
+        \item GDP $=$ Labor income $+$ Capital income.
+        \item GDP $=$ Wages $+$ Rent $+$ Interest $+$ Profit $+$ \dots
+    \end{itemize}
+\end{enumerate}
+
+\section{Gross National Product (GNP)}
+Gross National Product (GNP) is the total market value of all \textbf{final goods and services} produced \textbf{by a country's residents and businesses}, regardless of where that production takes place \textbf{during a specific time period}.
+\begin{itemize}
+    \item GDP focuses on \textit{where} production happens.
+    \item GNP focuses on \textit{who} produces it (the country’s citizens and businesses).
+\end{itemize}\vspace{10pt}
+The relationship between GNP and GDP:
+\begin{center}
+GNP $=$ GDP $+$ Net Factor Income from Abroad    
+\end{center}
+Where "Net Factor Income from Abroad" represents income earned by domestic residents from foreign investments minus income earned by foreign residents from domestic investments. This means if a country earns more from abroad than foreigners earn domestically, GNP will be higher than GDP, and vice versa.
+
+\section{National Income Accounting Identity}
+The relationship between a country's total income and its expenditures:
+\begin{center}
+    Y $=$ C $+$ I $+$ G $+$ (X $-$ M)
+\end{center}
+Where Y is GDP, C is household consumption, I is business investment, G is government purchases, and (X $-$ M) is net exports.
+\begin{enumerate}
+    \item \textbf{Consumption (C)}
+    \begin{itemize}
+        \item \textit{Definition:} All household spending on goods and services, excluding new housing.
+        \item \textit{Includes:}
+        \begin{itemize}
+            \item \textbf{Durable Goods:} Long-lasting items (cars, household appliances, furniture).
+            \item \textbf{Non-Durable Goods:} Quick-use items (food, clothing, gasoline).
+            \item \textbf{Services:} Non-physical, intangible products (healthcare, legal services, education).
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Investment (I)}
+    \begin{itemize}
+        \item \textit{Definition:} Private sector spending on capital goods and changes in inventories.
+        \item \textit{Includes:}
+        \begin{itemize}
+            \item \textbf{Business Fixed Investment:} Capital expenditures by firms (equipment, factories).
+            \item \textbf{Residential Fixed Investment:} Spending on new housing units by households and landlords (new home constructions and purchases, major home renovations).
+            \item \textbf{Inventory Investment:} Changes in the stock of unsold goods held by firms.
+        \end{itemize}
+        \item \textit{Excludes:} Financial assets like stocks, bonds, or cryptocurrencies, as these do not represent production.
+    \end{itemize}
+    \item \textbf{Government Spending (G)}
+    \begin{itemize}
+        \item \textit{Definition:} Government purchases of goods and services.
+        \item \textit{Includes:}
+        \begin{itemize}
+            \item Federal, state, and local spending on goods and services.
+        \end{itemize}
+        \item \textit{Excludes:} Transfer payments (social security, unemployment benefits, welfare), because these are not payments for goods or services.
+    \end{itemize}
+    \item \textbf{Net Exports (NX $=$ Exports $-$ Imports)}
+    \begin{itemize}
+        \item \textit{Definition:} The difference between exports (X) and imports (M).
+        \item \textit{Includes:}
+        \begin{itemize}
+            \item \textbf{Exports (X):} Goods and services produced domestically and sold to foreign buyers.
+            \item \textbf{Imports (M):} Goods and services produced abroad and purchased by domestic consumers.
+        \end{itemize}
+        \item Can result in trade surplus (positive) or deficit (negative).
+    \end{itemize}
+\end{enumerate}
 
 
 \end{document}
