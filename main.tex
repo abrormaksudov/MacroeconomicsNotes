@@ -8,7 +8,7 @@
 \usepackage{tcolorbox}
 \usepackage{multicol}
 \usepackage{textcomp}
-% \everymath{\displaystyle}
+\everymath{\displaystyle}
 
 
 \title{Macroeconomics Notes}
@@ -21,7 +21,7 @@
 \tableofcontents
 
 \section{Gross Domestic Product (GDP)}
-Gross Domestic Product (GDP) is the total market value of all \textbf{final goods and services} produced \textbf{within a country’s borders} in \textbf{a specific time period}.\\[20pt]
+Gross Domestic Product (GDP) is the total market value of all \textbf{final goods and services} produced \textbf{within a country’s borders} in \textbf{a specific time period}.\\[10pt]
 \textbf{GPD} \underline{does not include:}
 \begin{multicols}{2}
     \begin{itemize}
@@ -52,7 +52,7 @@ Gross Domestic Product (GDP) is the total market value of all \textbf{final good
     \begin{itemize}
         \item Sums all incomes earned by households and businesses during production.
         \item GDP $=$ Labor income $+$ Capital income.
-        \item GDP $=$ Wages $+$ Rent $+$ Interest $+$ Profit $+$ \dots
+        \item GDP $=$ Wages $+$ Profit $+$ (Rent $+$ Interest) $+$ (Indirect Taxes $-$ Subsidies) $+$ Depreciation $+$ \dots
     \end{itemize}
 \end{enumerate}
 
@@ -118,18 +118,151 @@ Where Y is GDP, C is household consumption, I is business investment, G is gover
 \end{enumerate}
 
 \section{Typical GDP Component Distribution}
+\textbf{Expenditure Approach}:
 \begin{itemize}
     \item Consumption (C): $\sim 70\%$ -- \textit{Largest component}
     \item Investment (I): $\sim 15\text{-}20\%$
     \item Government (G): $\sim 15\text{-}20\%$
     \item Net Exports (NX): $\sim \pm5\%$ -- \textit{Smallest component}
 \end{itemize}
+\textbf{Income Approach}
+\begin{itemize}
+    \item Wages: $\sim 50\text{-}60\%$ -- \textit{Largest component}
+    \item Profits: $\sim 20\text{-}30\%$
+    \item Rent + Interest: $\sim 5\text{-}10\%$
+    \item Indirect Taxes - Subsidies: $\sim 5\text{-}10\%$
+    \item Depreciation: $\sim 10\text{-}15\%$
+\end{itemize}
 
-\section{Disposable Personal Income}
-Disposable Personal Income (DPI) is the amount of money that households have available to spend or save after paying personal income taxes.
+\section{Disposable Income}
+Disposable Personal Income (DPI) is the amount of money that households have available to spend or save after paying income taxes: Disposable Income = Gross Income - Taxes.
 \begin{center}
     $Y^d = Y - T \quad$ or $\quad Y^d = C + S$ 
 \end{center}
 Where $Y^d$ is disposable income, $Y$ is total income, $T$ is taxes, $C$ is consumption, $S$ is savings.
+
+\section{Net Domestic Product (NDP)}
+Net Domestic Product (NDP) measures the total value of all final goods and services produced within a country in a given period, after subtracting depreciation.
+
+\subsection{NDP at Market Prices (NDP-MP)}
+NDP at Market Prices is valued at the prices paid by buyers, including indirect taxes net of subsidies.
+\begin{center}
+    NDP-MP $=$ GDP $-$ Depreciation
+\end{center}
+
+\subsection{NDP at Factor Cost (NDP-FC)}
+NDP at Factor Cost is valued at the cost to factors of production, excluding indirect taxes and including subsidies.
+\begin{center}
+    NDP-FC $=$ GDP $-$ Depreciation $-$ Indirect Taxes $+$ Subsidies
+\end{center}
+
+\section{Net Domestic Income (NDI)}
+Net Domestic Income (NDI) measures the total income earned by all factors of production within a country in a given period, after subtracting depreciation.
+
+\subsection{NDI at Market Prices (NDI-MP)}
+NDI at Market Prices aligns with market prices, including indirect taxes net of subsidies, and equals NDP-MP.
+\begin{center}
+    NDI-MP $=$ GDP $-$ Depreciation
+\end{center}
+
+\subsection{NDI at Factor Cost (NDI-FC)}
+NDI at Factor Cost reflects the income to factors, excluding indirect taxes and including subsidies, and equals NDP-FC.
+\begin{center}
+    NDI-FC $=$ GDP $-$ Depreciation $-$ Indirect Taxes $+$ Subsidies
+\end{center}
+
+\section{Real vs. Nominal Variable}
+\begin{itemize}
+    \item \textbf{Nominal Variable:} Measured in current market prices, not adjusted for inflation.
+    \item \textbf{Real Variable:} Adjusted for inflation, reflecting the true purchasing power.
+\end{itemize}
+\begin{center}
+    Real Variable $=$ $\frac{\text{Nominal Variable}}{\text{Price Level}} \times100$
+\end{center}
+Where Price Level is an index like CPI, PPI or GDP deflator.\\[10pt]
+\textbf{Purchasing power} is the quantity of goods or services that can be bought with a specific amount of money at a specific time.
+\begin{center}
+    Purchasing Power (for a specific good) $=$ $\frac{\text{Nominal Income}}{\text{Price of the Good}}$
+\end{center}
+
+\section{Price Index}
+A price index is a statistical measure that tracks the average change in prices of a specific basket of goods and services over time, relative to a base period.\\[6pt]
+\textbf{Price Index for a Single Good:}
+\begin{center}
+    Price Index $=$ $\frac{\text{Price in Current Year}}{\text{Price in Base Year}} \times 100$
+\end{center}
+More formally,
+\begin{center}
+    $PI_t=\frac{P_t}{P_0} \times 100$
+\end{center}
+Where $P_t$ is price of good in current year, $P_0$ is price of good in base year.\\[6pt]
+\textbf{Price Index for a Basket of Goods:}
+\begin{center}
+    Price Index $=$ $\frac{\text{Cost of Basket in Current Year}}{\text{Cost of Basket in Base Year}} \times 100$
+\end{center}
+or,
+\begin{center}
+    Price Index $=$ $\frac{\sum (\text{Price in Current Year} \times \text{Quantity in Base Year})}{\sum (\text{Price in Base Year} \times \text{Quantity in Base Year})} \times 100$
+\end{center}
+More formally,
+\begin{center}
+    $PI_t=\frac{\sum_{i=1}^n (P_{i,t} \times W_i)}{\sum_{i=1}^n  (P_{i,0} \times W_i)} \times 100$
+\end{center}
+or,
+\begin{center}
+    $PI_t=\sum_{i=1}^n w_i \times \frac{P_{i,t}}{P_{i,0}} \times 100$
+\end{center}
+Where:
+\begin{multicols}{2}
+    \begin{itemize}
+        \item $n=$ Total number of goods in the basket.
+        \item $P_{i,t}=$ Price of good $i$ in current year.
+        \item $P_{i,0}=$ Price of good $i$ in base year.
+        \item $W_i=$ Weight (proportion of spending) for good $i$.
+        \item $w_i=\frac{W_i}{\sum W_i}$.
+    \end{itemize}
+\end{multicols}
+\textbf{Laspeyres Price Index:}
+\begin{center}
+    $PI_t^L=\frac{\sum_{i=1}^n (P_{i,t} \times Q_{i,0})}{\sum_{i=1}^n  (P_{i,0} \times Q_{i,0})} \times 100$
+\end{center}
+Where $Q_{i,0}$ is quantity of good $i$ in base year.
+
+\section{Changes in Nominal and Real GDP}
+\begin{enumerate}
+    \item \textbf{Nominal GDP} = $\sum (P_t \times Q_t)$:
+    \begin{itemize}
+        \item \textit{Definition:} Value of output in current prices.
+        \item Changes in nominal GDP can be due to:
+        \begin{itemize}
+            \item \textbf{Changes in Prices} ($P_t$): Inflation or deflation.
+            \item \textbf{Changes in Quantities} ($Q_t$): More or less output produced (real growth or decline).
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Real GDP} = $\sum (P_0 \times Q_t)$:
+    \begin{itemize}
+        \item \textit{Definition:} Value of output in constant base-year prices.
+        \item Changes in real GDP can be due to:
+        \begin{itemize}
+            \item \textbf{Changes in Quantities Only} ($Q_t$): Prices are fixed, so only output  changes matter.
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+
+\section{Calculating Nominal and Real GDP}
+Recall that GDP = $P_1Q_1+P_2Q_2+\dots+P_nQ_n$\\[6pt]
+\textbf{Nominal GDP:}
+Nominal GDP is the total monetary value of final goods and services produced in year $t$, using current prices:
+\begin{center}
+    Nominal GDP$_t$ = $\sum_{i=1}^n P_{i,t} \times Q_{i,t}$
+\end{center}
+\textbf{Real GDP:}
+Real GDP measures the value of production in year $t$ using constant prices from a base year $b$:
+\begin{center}
+    Real GDP$_t$ = $\sum_{i=1}^n P_{i,b} \times Q_{i,t}$
+\end{center}
+
+
+
 
 \end{document}
