@@ -230,7 +230,7 @@ Where $Q_{i,0}$ is quantity of good $i$ in base year.
 
 \section{Changes in Nominal and Real GDP}
 \begin{enumerate}
-    \item \textbf{Nominal GDP} = $\sum (P_t \times Q_t)$:
+    \item \textbf{Nominal GDP} $=$ $\sum (P_t \times Q_t)$:
     \begin{itemize}
         \item \textit{Definition:} Value of output in current prices.
         \item Changes in nominal GDP can be due to:
@@ -239,7 +239,7 @@ Where $Q_{i,0}$ is quantity of good $i$ in base year.
             \item \textbf{Changes in Quantities} ($Q_t$): More or less output produced (real growth or decline).
         \end{itemize}
     \end{itemize}
-    \item \textbf{Real GDP} = $\sum (P_0 \times Q_t)$:
+    \item \textbf{Real GDP} $=$ $\sum (P_0 \times Q_t)$:
     \begin{itemize}
         \item \textit{Definition:} Value of output in constant base-year prices.
         \item Changes in real GDP can be due to:
@@ -250,19 +250,314 @@ Where $Q_{i,0}$ is quantity of good $i$ in base year.
 \end{enumerate}
 
 \section{Calculating Nominal and Real GDP}
-Recall that GDP = $P_1Q_1+P_2Q_2+\dots+P_nQ_n$\\[6pt]
+Recall that GDP $=$ $P_1Q_1+P_2Q_2+\dots+P_nQ_n$\\[6pt]
 \textbf{Nominal GDP:}
 Nominal GDP is the total monetary value of final goods and services produced in year $t$, using current prices:
 \begin{center}
-    Nominal GDP$_t$ = $\sum_{i=1}^n P_{i,t} \times Q_{i,t}$
+    Nominal GDP$_t$ $=$ $\sum_{i=1}^n P_{i,t} \times Q_{i,t}$
 \end{center}
 \textbf{Real GDP:}
 Real GDP measures the value of production in year $t$ using constant prices from a base year $b$:
 \begin{center}
-    Real GDP$_t$ = $\sum_{i=1}^n P_{i,b} \times Q_{i,t}$
+    Real GDP$_t$ $=$ $\sum_{i=1}^n P_{i,b} \times Q_{i,t}$
 \end{center}
 
+\section{Growth Rate}
+\begin{center}
+    Growth Rate $=$ $\frac{\text{X}_\text{end}-\text{X}_\text{start}}{\text{X}_\text{start}} \times 100$
+\end{center}
+Where $\text{X}_\text{start}$ is value in the initial year, and $\text{X}_\text{end}$ is value in the final year.
 
+\section{GDP Deflator}
+The GDP deflator is a price index that measures the aggregate price level of all goods and services produced in an economy, relative to a base year. It reflects how much of the change in GDP is due to price changes rather than actual output changes.
+\begin{center}
+    GDP Deflator$_t$ $=$ $\frac{\text{Nominal GDP}_t}{\text{Real GDP}_t} \times 100$
+\end{center}
+\begin{itemize}
+    \item If GDP Deflator $>100$, prices have increased since the base year (inflation).
+    \item If GDP Deflator $<100$, prices have decreased since the base year (deflation).
+\end{itemize}
 
+\section{Limitations of GDP}
+\begin{itemize}
+    \item \textbf{Excludes Non-Market Activities:} Household labor, volunteer work, and other unpaid services aren't counted despite their economic value.
+    \item \textbf{Ignores Income Distribution:} GDP measures total output but reveals nothing about how income is distributed across the population.
+    \item \textbf{Overlooks Environmental Costs:} Environmental degradation and resource depletion aren't subtracted from GDP calculations.
+    \item \textbf{Overstates Well-Being in Cases of Negative Events:} Disasters and wars increase GDP due to reconstruction but do not improve living standards.
+    \item \textbf{Disregards Quality Improvements:} GDP struggles to capture quality enhancements in goods and services over time.
+    \item \textbf{Fails to Measure Quality of Life:} Leisure time, health outcomes, and overall quality of life aren't reflected in GDP figures.
+    \item \textbf{Does Not Capture Underground Economy:} Informal and illegal economic activities are excluded from official GDP calculations.
+    \item \textbf{Focuses on Production, Not Sustainability:} GDP measures current production without considering whether economic activity is sustainable long-term.
+    \item \textbf{Counts Defensive Expenditures Positively:} Spending to fix problems (pollution cleanup, crime prevention) increases GDP despite not improving welfare.
+\end{itemize}
+
+\section{Consumer Price Index (CPI)}
+The Consumer Price Index (CPI) measures the average price change over time for a fixed basket of goods and services consumed by households. It is a key indicator of inflation.
+\begin{center}
+    CPI$_t$ $=$ $\frac{\text{Cost of Consumer Basket in Year } t}{\text{Cost of Consumer Basket in Base Year}} \times 100$
+\end{center}
+More formally,
+\begin{center}
+    $CPI_t = \frac{\sum_{i=1}^n P_{i,t} \times Q_{i,0}}{\sum_{i=1}^n P_{i,0} \times Q_{i,0}}$
+\end{center}
+
+\section{Limitations of CPI}
+\begin{itemize}
+    \item \textbf{Substitution Bias:} Doesn't account for consumers switching to cheaper alternatives when prices rise, potentially overstating inflation.
+    \item \textbf{Ignores Quality Improvements:} Struggles to accurately measure improvements in product quality over time.
+    \item \textbf{Excludes New Goods:} CPI does not quickly reflect newly introduced products and services.
+    \item \textbf{Does Not Capture Changes in Shopping Patterns:} Discounts, bulk buying, and online shopping trends are overlooked.
+\end{itemize}
+
+\section{Producer Price Index (PPI)}
+The Producer Price Index (PPI) measures the average change in selling prices received by domestic producers for their goods and services over time. It tracks price changes from the perspective of the seller rather than the consumer.
+\begin{center}
+    PPI$_t$ $=$ $\frac{\text{Cost of Producer Basket in Year } t}{\text{Cost of Producer Basket in Base Year}} \times 100$
+\end{center}
+More formally,
+\begin{center}
+    $PPI_t = \frac{\sum_{i=1}^n P_{i,t} \times Q_{i,0}}{\sum_{i=1}^n P_{i,0} \times Q_{i,0}}$
+\end{center}
+
+\section{Inflation Rate}
+Inflation Rate measures the percentage change in the general price level of goods and services in an economy over a specific period, typically measured annually.
+\begin{center}
+    Inflation Rate $=$ $\frac{\text{Price Index in Current Period} - \text{Price Index in Base Period}}{\text{Price Index in Base Period}} \times 100$
+\end{center}
+More formally,
+\begin{center}
+    $\pi_t=\frac{P_t-P_{t-1}}{P_{t-1}} \times 100$
+\end{center}
+Where $\pi_t$ is inflation rate in period $t$, $P_t$ is price index in period $t$, $P_{t-1}$ is price index in period $t-1$.
+
+\section{Hyperinflation}
+Hyperinflation is \textbf{an extremely high and typically accelerating rate of inflation}, usually exceeding \textbf{50\% per month}. It leads to the rapid devaluation of money, making it nearly worthless as a medium of exchange.
+\begin{itemize}
+    \item \textbf{Causes:}
+    \begin{itemize}
+        \item Excessive Money Printing
+        \item Loss of Confidence in Currency
+        \item Collapse of Tax Revenue \& Government Spending Imbalances
+    \end{itemize}
+    \item \textbf{Effects of Hyperinflation:}
+    \begin{itemize}
+        \item Money Loses Value Rapidly
+        \item Barter \& Foreign Currencies Replace Local Currency
+        \item Severe Economic Instability
+    \end{itemize}
+\end{itemize}
+
+\section{The Costs of Inflation}
+\begin{itemize}
+    \item \textbf{Distorts Price Signals:} Inflation makes it difficult to distinguish between genuine increases in demand and overall price level changes, leading to misallocation of resources.
+    \item \textbf{Erodes Purchasing Power:} If wages do not keep up with rising prices, consumers can afford less, reducing real income.
+    \item \textbf{Increases Uncertainty in Financial Markets:} High inflation makes long-term contracts, investments, and loans riskier, discouraging economic stability.
+    \item \textbf{Hurts Savers, Benefits Borrowers:} The value of money declines over time, reducing the real value of savings while making debt repayment easier.
+    \item \textbf{Imposes Menu Costs:} Businesses must frequently update price lists, catalogs, and systems, increasing operational expenses.
+    \item \textbf{Leads to Shoe-Leather Costs:} People reduce cash holdings to avoid losing value, making frequent trips to banks and increasing transaction inefficiencies.
+    \item \textbf{Disrupts International Competitiveness:} If domestic inflation is higher than that of trade partners, exports become more expensive, reducing global demand.
+    \item \textbf{Complicates Taxation and Contracts:} Inflation interacts with fixed nominal tax brackets and wages, leading to unintended financial distortions.
+\end{itemize}
+
+\section{The Costs of Deflation}
+\begin{itemize}
+    \item \textbf{Reduces Consumer Spending:} When prices fall, consumers delay purchases expecting even lower prices, leading to lower demand and economic slowdown.
+    \item \textbf{Increases Debt Burden:} As the real value of money rises, the burden of existing debt increases, making it harder for borrowers to repay loans.
+    \item \textbf{Leads to Wage Cuts and Unemployment:} Employers lower wages to match falling prices, but since wages are often sticky, businesses resort to layoffs instead.
+    \item \textbf{Hurts Business Revenues and Profits:} Firms earn lower nominal revenues, forcing them to cut costs through wage reductions, layoffs, or reduced investment.
+    \item \textbf{Discourages Investment:} Businesses hesitate to invest when future revenues are uncertain, slowing down capital formation and technological progress.
+    \item \textbf{Increases Real Interest Rates:} With nominal rates near zero, deflation raises real interest rates, discouraging borrowing and further reducing economic activity.
+    \item \textbf{Creates a Deflationary Spiral:} Lower demand leads to lower prices, which further reduces spending and investment, trapping the economy in prolonged stagnation.
+    \item \textbf{Weakens Government Fiscal Policy:} Tax revenues fall due to declining incomes and spending, limiting government ability to stimulate the economy.
+    \item \textbf{Transfers Wealth from Borrowers to Lenders:} Since the real value of debt increases, borrowers face higher repayment burdens, while lenders gain greater purchasing power from fixed loan repayments.
+\end{itemize}
+
+\section{Approximations for Percentage Changes}
+\begin{itemize}
+    \item \textbf{Product Rule:}
+    \[ \%\Delta(X\times Y)\approx\%\Delta X + \%\Delta Y \]
+    \begin{itemize}
+        \item The percentage change of a product is approximately the sum of the percentage changes of its components.
+    \end{itemize}
+    \item \textbf{Ratio Rule:}
+    \[ \%\Delta(X/Y)\approx\%\Delta X - \%\Delta Y \]
+    \begin{itemize}
+        \item The percentage change of a ratio is approximately the difference in percentage changes of the numerator and denominator.
+    \end{itemize}
+    \item \textbf{Logarithmic Approximation:}
+    \[ \ln{(1+x)}\approx x \quad \text{for small } x. \]
+\end{itemize}
+
+\section{Logarithmic Approximations in Growth Rate Calculations}
+\begin{itemize}
+    \item \textbf{GDP Growth Approximation:}
+    \[ g_t\approx\ln{(GDP_t)}-\ln{(GDP_{t-1})} \]
+    \begin{itemize}
+        \item The difference in logs approximates the percentage growth.
+    \end{itemize}
+    \item \textbf{Real Wage Growth Approximation:}
+    \[ g_{w_r}\approx g_{w_n}-\pi \]
+    \begin{itemize}
+        \item Real wages grow at the rate of nominal wages minus inflation.
+    \end{itemize}
+\end{itemize}
+
+\section{Unemployment}
+\begin{itemize}
+    \item \textbf{Employed (E):} A person 16 or older who:
+    \begin{itemize}
+        \item Works for \textbf{at least 1 hour per week} for pay, or
+        \item Works \textbf{15+ unpaid hours} in a family business, or
+        \item Has a job but is \textbf{temporarily absent} (e.g., sick leave, vacation), paid or unpaid.
+    \end{itemize}
+    \item \textbf{Unemployed (U):} A person 16 or older who:
+    \begin{itemize}
+        \item \textbf{Is not working}, but
+        \item \textbf{Is available for work}, and
+        \item \textbf{Has actively searched for a job in the last 4 weeks} (e.g., sending CVs, interviewing).
+    \end{itemize}
+    \item \textbf{Labor Force (L):} The total number of employed and unemployed in an economy.
+    \[ L=E+U \]
+    \item \textbf{Not in Labor Force (POP - L):} A person who \textbf{is neither employed nor unemployed} (e.g., retirees, students not seeking jobs, discouraged workers).
+    \item \textbf{Unemployment Rate:} The percentage of the labor force that is unemployed.
+    \[ u=\frac{U}{L}\times 100 \]
+    \item \textbf{Labor Force Participation Rate (LFPR):} The percentage of the total adult population that is in the labor force.
+    \[ LFPR=\frac{L}{POP}\times 100 \]
+\end{itemize}
+
+\section{Types of Unemployment}
+\begin{multicols}{2}
+    \begin{itemize}
+        \item Frictional Unemployment
+        \item Structural Unemployment
+        \item Cyclical Unemployment
+        \item Seasonal Unemployment
+    \end{itemize}
+\end{multicols}
+
+\section{Frictional Unemployment}
+Frictional unemployment refers to \textbf{short-term unemployment} that arises from the normal functioning of the labor market. It occurs even when there are enough jobs available because it takes time for workers and employers to find a good match.
+\begin{itemize}
+    \item \textbf{Key Characteristics:} Temporary, inevitable, and exists even in healthy economies with full employment.
+    \item \textbf{Causes:}
+    \begin{itemize}
+        \item \textbf{Job Search Process:} Workers take time to find jobs that best match their skills and preferences.
+        \item \textbf{Mismatch of Skills \& Job Requirements:} Different jobs require different skills, and workers may need time to find suitable positions.
+        \item \textbf{Geographic Mobility Delays:} Workers may need time to relocate for jobs.
+        \item \textbf{Imperfect Information:} Employers and job seekers may not immediately know about all available opportunities.
+    \end{itemize}
+    \item \textbf{Sectoral Shifts:}
+    \begin{itemize}
+        \item \textbf{Technological Changes:} Some jobs disappear while new ones emerge.
+        \item \textbf{Trade Adjustments:} International trade shifts labor demand.
+    \end{itemize}
+    \item \textbf{Policy Implications:} Can be reduced through improved job matching services, better information dissemination, and retraining programs, but cannot be eliminated entirely.
+\end{itemize}
+
+\section{Structural Unemployment}
+Structural unemployment occurs when \textbf{workers’ skills or location do not match available jobs}, leading to long-term unemployment. It results from \textbf{fundamental changes in the economy}, such as technological advancements, shifts in industries, or labor market policies. Unlike frictional unemployment, it persists even when jobs are available because affected workers lack the necessary qualifications or mobility.
+\begin{itemize}
+    \item \textbf{Key Characteristics:} Longer-term than frictional unemployment, often requires significant retraining or relocation to resolve.
+    \item \textbf{Causes:}
+    \begin{itemize}
+        \item \textbf{Technological Change:} Automation and artificial intelligence replace jobs.
+        \item \textbf{Globalization \& Trade:} Industries decline as production shifts to lower-cost countries.
+        \item \textbf{Geographic Mismatch:} Jobs may be available in certain regions, but workers are unwilling or unable to relocate.
+        \item \textbf{Education \& Skill Gaps:} Outdated skills make workers unemployable in modern industries.
+        \item \textbf{Labor Market Policies:} Minimum wages, strong labor unions, and employment protection laws can prevent wages from adjusting, increasing structural unemployment.
+    \end{itemize}
+    \item \textbf{Wage Rigidity:} Structural unemployment is worsened by \textbf{real wage rigidity}, where wages remain \textbf{above the market-clearing level}, leading to excess labor supply
+    \begin{itemize}
+        \item \textbf{Minimum Wage Laws:} If the legal minimum wage is above equilibrium, low-skilled workers may struggle to find jobs.
+        \item \textbf{Labor Unions:} Unions negotiate higher wages, which can lead to job losses in unionized sectors.
+        \item \textbf{Efficiency Wages:} Firms pay above-market wages to boost productivity, reduce turnover, and attract better workers, but this reduces hiring.
+    \end{itemize}
+    \item \textbf{Policy Implications:} Requires targeted interventions like worker retraining programs, education reform, and regional development initiatives rather than general economic stimulus.
+\end{itemize}
+
+\section{Cyclical Unemployment}
+Cyclical unemployment is \textbf{unemployment caused by fluctuations in the business cycle}. It increases during \textbf{recessions} when economic activity slows and decreases during \textbf{expansions} when demand for labor rises. Unlike frictional and structural unemployment, it is directly related to the overall health of the economy.
+\begin{itemize}
+    \item \textbf{Key Characteristics:} Temporary but potentially widespread, affecting otherwise qualified workers due to insufficient aggregate demand.
+    \item \textbf{Causes:}
+    \begin{itemize}
+        \item \textbf{Decline in Aggregate Demand:} When consumer and business spending fall, firms cut production and lay off workers.
+        \item \textbf{Economic Recessions:} A contraction in GDP reduces hiring, causing unemployment to rise.
+        \item \textbf{Financial Crises:} Banking failures and credit shortages lead to lower investment and job losses.
+        \item \textbf{Global Economic Shocks:} External crises (e.g., oil price spikes, pandemics) disrupt markets, reducing demand for labor.
+    \end{itemize}
+    \item \textbf{The Relationship Between Cyclical Unemployment \& the Business Cycle:}
+    \begin{itemize}
+        \item \textbf{Expansion (Boom):} Demand for goods and services increases $\rightarrow$ Businesses hire more workers $\rightarrow$ Unemployment falls.
+        \item \textbf{Recession (Bust):} Demand declines $\rightarrow$ Businesses cut production $\rightarrow$ Unemployment rises.
+    \end{itemize}
+    \item \textbf{Policy Response:} Unlike other unemployment types, cyclical unemployment can be directly addressed through:
+    \begin{itemize}
+        \item Monetary policy (interest rate adjustments)
+        \item Fiscal policy (government spending and taxation)
+        \item Automatic stabilizers (unemployment insurance)
+    \end{itemize}
+\end{itemize}
+
+\section{Natural Rate of Unemployment}
+The \textbf{natural rate of unemployment} is the unemployment rate that the economy tends toward in the \textbf{long run}, when it is functioning normally. It consists of \textbf{frictional} and \textbf{structural unemployment} but excludes \textbf{cyclical unemployment}.
+\begin{center}
+    Actual Unemployment $=$ Natural Rate of Unemployment $+$ Cyclical Unemployment
+\end{center}
+Where: Natural Rate of Unemployment $=$ Frictional Unemployment $+$ Structural Unemployment.
+More formally,
+\[ u=u^*+u_c \]
+Where:
+\begin{itemize}
+    \item $u$ $=$ Actual unemployment rate.
+    \item $u^*$ $=$ Natural rate of unemployment (includes frictional and structural unemployment).
+    \item $u_c$ $=$ Cyclical unemployment (caused by business cycle fluctuations).
+\end{itemize}
+Breaking it down further:
+\[ u=u_f+u_s+u_c \]
+Where:
+\begin{itemize}
+    \item $u_f$ $=$ Frictional unemployment rate (due to job search and matching).
+    \item $u_s$ $=$ Structural unemployment rate (due to wage rigidity and mismatches).
+    \item $u_c$ $=$ Cyclical unemployment rate (due to economic fluctuations).
+\end{itemize}
+A related concept is \textbf{NAIRU (Non-Accelerating Inflation Rate of Unemployment)}, which is the unemployment rate at which \textbf{inflation remains stable}.
+\begin{itemize}
+    \item If \textbf{actual unemployment $=$ NAIRU}, the economy is in \textbf{equilibrium}, and inflation is stable.
+    \item If \textbf{actual unemployment $>$ NAIRU}, the economy is in \textbf{recession}, and inflation tends to fall.
+    \item If \textbf{actual unemployment $<$ NAIRU}, the economy is \textbf{overheating}, and inflation tends to rise.
+\end{itemize}
+\textbf{NAIRU and Inflation Relationship:}
+\begin{itemize}
+    \item If \textbf{unemployment falls below NAIRU}, firms compete for scarce workers, raising wages $\rightarrow$ higher costs $\rightarrow$ \textbf{inflation rises}.
+    \item If \textbf{unemployment rises above NAIRU}, wage pressures decline $\rightarrow$ demand weakens $\rightarrow$ \textbf{inflation falls}.
+    \item This tradeoff is linked to the \textbf{Phillips Curve}, which shows the inverse relationship between unemployment and inflation.
+\end{itemize}
+
+\section{Fisher Equation}
+The Fisher equation describes the relationship between \textbf{nominal interest rates, real interest rates}, and \textbf{inflation expectations}. It helps explain how inflation affects borrowing, lending, and investment decisions.\\[6pt]
+\textbf{Core Fisher Equation:}
+\[ i = r + \pi \]
+Where:
+\begin{itemize}
+    \item $i$ $=$ Nominal interest rate (observed market rate)
+    \item $r$ $=$ Real interest rate (adjusted for purchasing power)
+    \item $\pi$ $=$ Inflation rate
+\end{itemize}
+\textbf{Exact Fisher Equation:}
+\begin{align*}
+    1+i&=(1+r)(1+\pi)\\[6pt]
+    i&=r+\pi+r\pi
+\end{align*}
+
+\section{The Quantity Theory of Money}
+\[ M \times V = P \times Y \]
+Where:
+\begin{itemize}
+    \item $M$ is the money supply (the total amount of money in circulation)
+    \item $V$ is the velocity of money (how quickly money changes hands)
+    \item $P$ is the price level
+    \item $Y$ is the real output (the quantity of goods and services)
+\end{itemize}
 
 \end{document}
