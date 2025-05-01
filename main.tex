@@ -537,7 +537,7 @@ A related concept is \textbf{NAIRU (Non-Accelerating Inflation Rate of Unemploym
 \section{Fisher Equation}
 The Fisher equation describes the relationship between \textbf{nominal interest rates, real interest rates}, and \textbf{inflation expectations}. It helps explain how inflation affects borrowing, lending, and investment decisions.\\[6pt]
 \textbf{Core Fisher Equation:}
-\[ i = r + \pi \]
+\[ i_t = r_t + \pi_{t+1}^e \]
 Where:
 \begin{itemize}
     \item $i$ $=$ Nominal interest rate (observed market rate)
@@ -574,5 +574,236 @@ Types of Money:
     \item \textbf{Fiat Money:} No intrinsic value; value comes from government decree.
     \item \textbf{Central Bank Money:} Currency and reserves held at the central bank.
 \end{itemize}
+Central Bank:
+\begin{itemize}
+    \item Issues currency.
+    \item Holds reserves, regulates banks.
+    \item Monetary Policy: controls interest rates and money supply.
+\end{itemize}
+Money Supply Measures:
+\begin{itemize}
+    \item M0 (monetary base): physical currency + reserves held by banks at the central bank.
+    \item M1: M0 + demands deposits.
+    \item M2: M1 + saving deposits, time deposits.
+\end{itemize}
+Role of Central Banks (Monetary Policy):
+\begin{itemize}
+    \item Open Market Operations (OMO): buying/selling government bonds to increase/decrease money supply.
+    \item Discount Rate: interest rate charged to commercial banks for borrowing from the central bank.
+    \item Reserve Requirements: the fraction of deposits banks must hold in reserve.
+\end{itemize}
+Money Multiplier:
+\[
+\text{Money Multiplier} = \frac{1}{\text{Reserve Ration}}
+\]
+
+\section{Cobb-Douglas Production Function}
+A production function shows the relationship between the quantities of inputs (labor, capital) used and the amount of output produced.
+\[
+Y = F(K, L)
+\]
+\[
+Y = A \cdot K^\alpha \cdot L^{1-\alpha}
+\]
+\begin{itemize}
+    \item $Y$ = Output (total production of GDP).
+    \item $K$ = Capital (machines, tools, factories).
+    \item $L$ = Labor (number of workers or hours worked).
+    \item $A$ = Total Factor Productivity (TFP) - a measure of technology or efficiency.
+    \item $\alpha$ = Output elasticity of capital ($0 < \alpha < 1$).
+\end{itemize}
+Marginal Product of Capital (MPK):
+\[
+MPK = \frac{\partial Y}{\partial K} = \alpha \cdot A \cdot K^{\alpha-1} \cdot L^{\alpha - 1} = \alpha \cdot \frac{Y}{K}.
+\]
+Marginal Product of Labor (MPL):
+\[
+MPK = \frac{\partial Y}{\partial L} = (1 - \alpha) \cdot A \cdot K^{\alpha} \cdot L^{-\alpha} = (1-\alpha) \cdot \frac{Y}{L}.
+\]
+Firm's Nominal Profit:
+\[
+\Pi^\text{nominal} = \text{Total Revenue (TR)} - \text{Total Cost (TC)}
+\]
+\[
+\Pi^\$ = P^\$ \cdot Q - [w^\$L+r^\$K]
+\]
+\begin{itemize}
+    \item $\Pi$ = Nominal profit.
+    \item $P$ = Price per unit.
+    \item $Q = F(K,L)$ = Quantity of output.
+    \item $w$ = Nominal wage.
+    \item $L$ = Quantity of labor.
+    \item $r$ = Nominal rental rate of capital.
+    \item $K$ = Quantity of capital.
+\end{itemize}
+Profit Maximization Conditions:
+\[
+\frac{\partial \Pi}{\partial L} = P \cdot A \cdot F(K,L) - w = 0 \implies P \cdot MPL = w
+\]
+\[
+\frac{\partial \Pi}{\partial K} = P \cdot A \cdot F(K,L) - r = 0 \implies P \cdot MPK = r
+\]
+Real Interest Rate: \\
+$Y = C + I + G$ (for close economy)
+$Y - C - G = I$ (savings) \\
+$S = Y - C - G + T - T$ \\
+$S = (Y - C - T) + (T - G)$
+
+\section{Money Demand}
+\[
+\frac{M}{P}^d = L(r+\pi^e) Y = L(i)Y
+\]
+\begin{itemize}
+    \item $Y$ = real income - positive effect
+    \item $i$ = nominal interest rate - negative effect.
+    \item $L$ = Liquidity preference function.
+\end{itemize}
+
+\begin{itemize}
+    \item income $Y \uparrow \implies$ real money demand $\frac{M}{P}\uparrow$.
+    \item price level $Y \uparrow \implies$ nominal money demand $M \uparrow$, real money demand no change.
+    \item uncertainty $Y \uparrow \implies$ real money demand $\frac{M}{P}\uparrow$.
+    \item interest rate $i \uparrow \implies$ real money demand $\frac{M}{P}\downarrow$.
+\end{itemize}
+
+\section{Expansionary Monetary Policy}
+Expansionary monetary policy is used by central banks to stimulate economic activity , especially during recessions or periods of high unemployment.
+\begin{itemize}
+    \item OMO: central bank buys bonds $\rightarrow$ increases money supply.
+    \item Interest Rate: lower interest rate.
+    \item Reserve Requirements: lower reserve ratio $\rightarrow$ more money in economy.
+\end{itemize}
+Outcomes: $\uparrow$investment, $\uparrow$consumption, $\uparrow$AD.
+
+\section{Contractionary Monetary Policy}
+Contractionary monetary policy is used by central banks to slow down economic activity , especially when there is high inflation.
+\begin{itemize}
+    \item OMO: central bank sells bonds $\rightarrow$ decreases money supply.
+    \item Interest Rate: raise interest rate.
+    \item Reserve Requirements: raise reserve ratio $\rightarrow$ less money in economy.
+\end{itemize}
+Outcomes: $\downarrow$spending, $\downarrow$inflation, $\downarrow$AD.
+
+\section{Keynesian Economics}
+Consumption $C=C_0 + mpc[Y-T]=C_0 + mpc[Y-(\bar{T}+tY)]$
+\begin{itemize}
+    \item $C$ = aggregate consumption.
+    \item $C_0$ = autonomous consumption.
+    \item $\beta$ = marginal propensity to consume.
+    \item $Y-T=Y^d$ = disposable income.
+\end{itemize}
+Government expenditure $(G, T)$: fixed.\\
+Investment (I(r)): depends on real interest rate.
+$I = I^P + I^U=I_0 -\alpha r + I^U$
+\begin{itemize}
+    \item $I$ = total actual investment.
+    \item $I_0$ = autonomous investment.
+    \item $I^P$ = planned investment by firms.
+    \item $I^U$ = unplanned investment, typically inventory changes that were not intended.
+    \item $r$ = real interest rate.
+    \item $\alpha$ = sensitivity of investment to changes in $r$ (positive constant).
+\end{itemize}
+
+\section{Fiscal Policy}
+Fiscal Policyt Tools:
+\begin{itemize}
+    \item Government spending ($\bar{G}$)
+    \item Lump-sum taxes ($\bar{T}$)
+    \item Income tax rate ($t$): $T = \bar{T} + tY$
+\end{itemize}
+\[
+\text{Fiscal Multiplier} = \frac{1}{1- \text{MPC}}
+\]
+Budget Deficit = $G - T$
+
+\section{Expansionary Fiscal Policy}
+Used when: unemployment is high, growth is slow, there's a recession.\\
+Instruments:
+\begin{itemize}
+    \item $\bar{G}\uparrow$: more public spending.
+    \item $\bar{T}\downarrow$: fixed tax falls.
+    \item $t\downarrow$: people keep more of their income.
+\end{itemize}
+This increases disposable income, consumption, and aggregate demand.
+
+
+\section{Contractionary Fiscal Policy}
+Used when: inflation is high, economy is overheating, labor market is tight.
+Instruments:
+\begin{itemize}
+    \item $\bar{G}\downarrow$: less spending.
+    \item $\bar{T}\uparrow$: less disposable income.
+    \item $t\uparrow$: larger share of income taxed.
+\end{itemize}
+This reduces aggregate demand, slowing down the economy.
+
+\section{Total Planned Expenditure}
+\[
+PE = C + I + G.
+\]
+\[
+PE = C_0 + \text{MPC}\cdot [Y - (\bar{T} - tY)] + I_0 - \alpha r + \bar{G}.
+\]
+Goods Market Equilibrium Condition: $Y=PE$
+\[
+Y = C_0 + \text{MPC}\cdot [Y - (\bar{T} - tY)] + I_0 - \alpha r + \bar{G}.
+\]
+
+\[
+\Delta Y = \text{Multiplier} \times \Delta G
+\]
+\[
+\Delta C = \text{MPC} \times \Delta Y
+\]
+
+\section{Exchange Rate}
+\[
+E_{t,\frac{usd}{eur}} = \text{U.S. dollars per euro}
+\]
+
+\section{Real Exchange Rate}
+\[
+q_{\frac{usd}{eur}} = \frac{P^{eur}E_{\frac{usd}{eur}}}{P^{usd}}
+\]
+Types of Exchange Rate:
+\begin{itemize}
+    \item Flexible (Law of One Price): $P\$ = P_e \times E\$$
+    \item Fixed/Pegged (Uncovered Interest Parity):
+\end{itemize}
+
+\section{Uncovered Interest Parity}
+\[
+(1+i_t^{usd}) = (1+i_t^{eur}) \times \frac{E_{t+1,\frac{usd}{eur}}^e}{E_{t,\frac{usd}{eur}}}
+\]
+
+\section{UIP Approximation}
+\[
+i_t^{usd} - i_t^{eur} \approx \Delta E_t.
+\]
+
+\section{Open Economy}
+\[
+D=C(Y^{dom}-\bar{T}) + I(i) + \bar{G} + TB(q_{\frac{dom}{for}}, Y^{dom}-\bar{T}, Y_1^{for} - \bar{T}^{for}).
+\]
+\begin{itemize}
+    \item $P$ = domestic price level.
+\end{itemize}
+$q > 1$ = foreign goods are expensive, imports$\downarrow$, exports$\uparrow$. \\
+$q < 1$ = foreign goods are cheap, imports$\uparrow$, exports$\downarrow$. \\
+
+\[
+D = C_0+ mpc (Y-\bar{T}) + \bar{G} + I +\bar{X} - mY.
+\]
+\[
+D = (C_0+ mpc \cdot \bar{T} + \bar{G} + I +\bar{X}) + (mpc - m)Y.
+\]
+
+\[
+Y = D = A + (mpc - m)Y
+\]
+where $m$ is marginal propensity to import
+\[
+Y = \frac{1}{1 - mpc + m}
+\]
 
 \end{document}
